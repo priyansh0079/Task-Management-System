@@ -7,7 +7,8 @@ A RESTful API built with .NET Core for managing tasks. This application allows u
   - Filters: Retrieve tasks filtered by status, due date, and pagination.
   - CSV Export: Export all tasks into a CSV file.
   - Validation: Input validation and meaningful error messages.
-  - Swagger Integration: Explore and test API endpoints interactively.
+  - Swagger Integration: Explore and test API endpoints interactively with its documentation.
+  - Dependency Injection: Added for modular, testable, and maintainable services.
   - Unit Tests: xUnit test coverage for core functionality.
 
 **Prerequisites**
