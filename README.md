@@ -12,7 +12,7 @@ A RESTful API built with .NET Core for managing tasks. This application allows u
   - Unit Tests: xUnit test coverage for core functionality.
 
 **Prerequisites**
-- .NET 6 SDK or later
+- .NET 8 SDK
 - Any IDE or text editor (e.g., Visual Studio Code)
 - Git
 
