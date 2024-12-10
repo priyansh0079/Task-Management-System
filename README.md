@@ -11,19 +11,43 @@ A RESTful API built with .NET Core for managing tasks. This application allows u
   Unit Tests: xUnit test coverage for core functionality.
 
 **Prerequisites**
-.NET 6 SDK or later
-Any IDE or text editor (e.g., Visual Studio Code)
-Git
+- .NET 6 SDK or later
+- Any IDE or text editor (e.g., Visual Studio Code)
+- Git
 
 **Setup Instructions**
-git clone https://github.com/priyansh0079/Task-Management-System.git
-cd Task-Management-System
+- `git clone https://github.com/priyansh0079/Task-Management-System.git`
+- `cd Task-Management-System`
 
-cd TaskManagementSystem.API
-dotnet restore
-dotnet build
-dotnet run
+- `cd TaskManagementSystem.API`
+- `dotnet restore`
+- `dotnet build`
+- `dotnet run`
 
-cd TaskManagementSystem.Tests
-dotnet test
+- `cd TaskManagementSystem.Tests`
+- `dotnet test`
+
+**API Endpoints**
+Task Management
+
+| HttpMethod       | Endpoint       | Description       |
+|-----------------|----------------|----------------|
+| GET | /Tasks/list  | Fetch all tasks (with filters)  |
+| GET	| /Tasks/get/{id}  |Fetch details of a specific task.  |
+| POST | /Tasks/create  | Create a new task. |
+| PUT | /Tasks/update/{id}  | Update an existing task. |
+| DELETE | /Tasks/delete/{id}  | Delete a task by ID.  |
+
+
+**Filters**
+- status: Filter tasks by Pending, In Progress, or Completed.
+- dueDate: Fetch tasks due before a specific date.
+- page and pageSize: Enable pagination.
+
+**Technologies Used**
+- Language: C#
+- Framework: .NET Core 8
+- Database: In-Memory
+- Testing Framework: xUnit
+- API Documentation: Swashbuckle (Swagger)
 
